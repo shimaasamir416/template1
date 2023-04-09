@@ -1,0 +1,900 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.header{
+    width:100%;
+    height: 50px;;
+    background-color:rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index:3;
+}
+.img1{
+    height: 50px;
+    width: 150px;
+    float: left;
+    margin-left: 150px;
+    border-radius: 50px;
+}
+.list1 li{
+    color: white;
+    margin-left: 20px;
+    font-size: 20px;
+    list-style:none;
+    display: inline-block;
+    
+}
+.list1{
+    float: right;
+    margin-right: 120px;
+    margin-top:10px;
+}
+.list1 li a{
+    color: white;
+    text-decoration:none;
+
+}
+.divho{
+    background-color:rgb(216, 200, 176) ;
+    width: 100%;
+    height: 4px;
+}
+.header .list1 li .div1{
+    width: 100%;
+    height: 4px;
+    background-color: rgb(37, 37, 37);
+    position: relative;
+    visibility: hidden;
+    opacity: 0;
+}
+.header .list1 li:hover .div1{
+    visibility: visible;
+    opacity: 1;
+}
+.header .div1:after{
+    position: absolute;
+    content:"";
+    width:0;
+    height:100%;
+    top:0;
+    left:0;
+    background-color:rgb(216, 200, 176);
+    opacity: 0;
+    transition: 1s;
+}
+.header li .div1:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    transition: 2s;
+}
+.header:hover{
+    background-color: rgb(37, 37, 37) ;
+}
+.list1 li a:hover{
+    color: rgb(216, 200, 176) ;
+}
+.divh{
+    width: 100%;
+    height: 100vh;
+    background:url(../images/woman-holding-sale-shopping-bags-consumerism-shopping-lifestyle-concept.jpg) ;
+    background-size: cover;
+    position: relative;
+}
+.overley{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color:rgba(0,0,0,0.8);
+}
+.content{
+    width:50%;
+    height: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50% ,-50%);
+    text-align: center;
+    color: white;
+}
+.content h2{
+    font-size: 50px;
+}
+.content p{
+    margin:20px 0px 20px 0px;
+    word-spacing:5px;
+    font-size:20px;
+}
+.btn{
+    width: 135px;
+    height: 45px;
+    border-radius:5px;
+    border:none;
+    font-size: 20px;
+}
+.btn1{
+    background-color: white;
+}
+.btn2{
+    background-color: rgb(112, 79, 30);
+    color:white;
+}
+.btn:hover{
+    opacity: 0.7;
+}
+.container{
+    width:100%;
+    height:600px;
+    top: 0;
+    left: 0;
+    background-color:rgb(216, 200, 176);
+}
+.ad1{
+    text-align: center;
+    color:rgb(0, 0, 0) ;
+    font-size:45px;
+    padding-top:20px;
+}
+.divline{
+    height: 4px;
+    width: 150px;
+    background-color: rgb(0, 0, 0);
+    margin:auto ;
+    margin-top:20px;
+}
+.content1{
+    width:60%;
+    height: 500px;
+    margin: auto;
+}
+.sales{
+    width: 30%;
+    height: 250px;
+    border: 5px solid rgb(121, 110, 97);
+    background-color: rgb(172, 147, 109);
+    color: rgb(0, 1, 1);
+    float: left;
+    text-align: center;
+    position: relative;
+}
+.sales i{
+    color:rgb(112, 79, 30);
+}
+.sale1{
+    margin-top:150px;
+}
+.sale2{
+    margin: 150px 5% 0 5%;
+}
+.sale3{
+    margin-top:150px;
+}
+.item{
+    display: block; 
+    margin-top: 20px;
+    font-size: 30px;  
+}
+.hsale{
+    margin-top:20px;
+    font-size:20px;
+}
+.psale{
+    margin-top: 20px;
+}
+.bsale{
+    width: 100px;
+    height: 30px;
+    border:none;
+    font-size: 14px;
+    margin-top:20px;
+    background-color:rgb(172, 147, 109);
+}
+.sales:after{
+    position: absolute;
+    content:"";
+    width:0;
+    height:0;
+    top:0;
+    left:0;
+    background-color: black;
+    opacity: 0;
+}
+.sales:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    transition: 2s;
+}
+.ad2{
+    font-size: 40px;
+    padding-top: 3%;
+    text-align: center;
+}
+.divline2{
+    height: 4px;
+    width: 150px;
+    background-color: rgb(0, 0, 0);
+    margin:auto ;
+    margin-top:20px;
+}
+.container2{
+    width:100%;
+    height:900px;
+    top: 0;
+    left: 0;
+    background-color:rgb(225, 208, 185);
+}
+.content2{
+    width:80%;
+    height: 700px;
+    margin: auto;
+}
+.products{
+    margin-top:60px ;
+}
+.prods{
+    width: 30%;
+    height: 250px;
+    border:none;
+    color: rgb(0, 1, 1);
+    float: left;
+    position: relative;
+}
+.pro-img1{
+    margin-top:100px;
+}
+.pro-img2{
+    margin: 100px 5% 0 5%;
+}
+.pro-img3{
+    margin-top:100px;
+}
+.pro-img4{
+    margin-top:100px;
+}
+.pro-img5{
+    margin: 100px 5% 0 5%;
+}
+.pro-img6{
+    margin-top:100px;
+}
+.container2 .content2 .prod-content{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    text-align: center;
+    transition: 0.5s;
+    border-radius: 1px;
+}
+.container2 .content2 .products div:hover .prod-content{
+    opacity: 0.8;
+    transition: 1s;
+}
+.container2 .content2 .prod-content .ad3{
+    font-size: 35px;
+    font-weight: bold;
+    color:rgb(112, 79, 30);
+    margin-top: 120px;
+    transition: .5s;
+}
+.container2 .content2 .products:hover .ad3{
+    margin-top: 100px;
+}
+.prod-content .p3{
+    color: white;
+    margin: 0px 10px;
+}
+.prod-content i{
+    padding: 7px;
+    background:rgb(231, 222, 209);
+    color:rgb(112, 79, 30);
+    border-radius: 50%;
+}
+.container3{
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color:rgb(216, 200, 176);
+}
+.content3{
+    width: 80%;
+    height: 60%;
+    margin: auto;
+    margin-top: 5%;
+}
+.content3>div{
+    width: 30%;
+    height: 30%;
+    border:5px solid rgb(121, 110, 97);
+    border-radius: 15px;
+    float: left;
+    position:relative;
+    margin:6% 10px 10px 2%;
+    overflow: auto;
+}
+.one1{
+    width: 10%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    padding-top: 13px;
+    font-size: larger;
+}
+.one1 i{
+    color:rgb(133, 102, 56);
+}
+.one2{
+    width:90%;
+    height: 100%;
+    float: left;
+}
+.one2 .ad4{
+    padding-top: 10px;
+}
+.one2 .p4{
+    padding-top: 20px;
+}
+.content3>div::after{
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    bottom: 50%;
+    right: 50%;
+    background-color:rgb(159, 126, 76);
+    opacity:0.5;
+    border-radius: 15px;
+}
+.content3>div:hover:after{
+    top: 0%;
+    left: 0%;
+    bottom: 0%;
+    right: 0%;
+    transition: .7s;
+}
+.container4{
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color:rgb(225, 208, 185);
+}
+.content-left{
+    width: 50%;
+    height: 100vh;
+    float: left;
+}
+.content-right{
+    width: 50%;
+    height: 100vh;
+    float: left;
+    position: relative;
+}
+.ad5{
+    padding:10% 0 0 10%;
+    font-size: 45px;
+}
+.divline5{
+    margin:2% 0 0 10%;
+    width: 300px;
+    height: 5px;
+    background-color: rgb(0, 0, 0);
+}
+.content-left .p5 , .list{
+    font-size:30px;
+    margin:30px 0 0 10%;
+}
+.list li {
+    list-style:none;
+}
+.content-right .img-right{
+    width: 400px;
+    height: 400px;
+    margin: 25% 0 0 20%;
+}
+.check{
+    width: 15%;
+    height: 10px;
+    margin: 3% 0 0 20%;
+    position: absolute;
+    left: 18%;
+}
+.checks{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid  rgb(91, 65, 25);
+    float: left;
+}
+.check1{
+    margin-left: 15%;
+}
+.check2{
+    margin: 0 20%;
+    background-color: rgb(112, 79, 30) ; 
+}
+.check3{
+    margin-right: 15%;
+}
+.check1:hover{
+    background-color: rgb(112, 79, 30) ;
+}
+.checks:hover{
+    background-color: rgb(112, 79, 30) ;
+}
+.container5{
+    width: 100%;
+    height: 50vh;
+    background: url(../images/istockphoto-1387134070-612x612.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 0;
+}
+.container5::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 1;
+    background-color: #00000085;
+}
+.container5 .content5{
+    overflow: auto;
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+}
+.container5 .content5 div{
+    width: 25%;
+    position: relative;
+    z-index: 2;
+    float: left;
+    text-align: center;
+}
+.container5 .content5 i{
+    font-size: 30px;
+    color:rgb(190, 120, 16);
+}
+.container5 .content5 h2{
+    margin-top: 5px;
+    color: white;
+} 
+.container5 .content5 p{
+    margin-top: 5px;
+    color: white;
+} 
+.container6{
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color:rgb(216, 200, 176);
+}
+.content6{
+    width: 80%;
+    height: 60%;
+    margin: auto;
+    margin-top: 6%;
+    position: relative;
+}
+.container6 .ad6{
+    font-size: 40px;
+    padding-top: 3%;
+    text-align: center;
+}
+.divline6{
+    height: 4px;
+    width: 150px;
+    background-color: rgb(0, 0, 0);
+    margin:auto ;
+    margin-top:20px;
+}
+.content6>div{
+    width: 20%;
+    height: 350px;
+    border: 5px solid rgb(121, 110, 97);
+    background-color: rgb(172, 147, 109);
+    color: rgb(0, 1, 1);
+    float: left;
+    text-align: center;
+    position:relative;
+    margin-top: 5%;
+    z-index: 0;
+}
+.content6 .div1{
+    margin-left: 10%;
+}
+.content6 .div2{
+    margin-left: 10%;
+}
+.content6 .div3{
+    margin-left: 10%;
+}
+.content6 h2{
+    margin-top:20px;
+    font-size:20px;
+}
+.content6 .div11{
+    width: 80px;
+    height: 80px;
+    border: 2px solid rgb(9, 31, 31);
+    border-radius: 50%;
+    margin:auto; 
+    color:rgb(0, 1, 1);
+    margin-top: 25px;
+}
+.content6 .div11 h2{
+    margin:5px 10px 0px 10px;
+    font-size:35px;
+}
+.content6 .div11 p{
+    margin:0px 10px 0px 10px;
+    font-size:12px;
+}
+.content6 p{
+    margin-top: 20px;
+}
+.content6 button{
+    width: 100px;
+    height: 30px;
+    border:none;
+    font-size: 14px;
+    margin-top:20px;
+    background-color:rgb(172, 147, 109);
+}
+.content6 div:after{
+    position: absolute;
+    content:"";
+    width:100%;
+    height:0;
+    top:0;
+    left:0;
+    background-color: black;
+    opacity: 0;
+    transition: 1s;
+}
+.content6 div:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    transition: 2s;
+}
+.content6 div:hover .ad2{
+    color: white;
+    transition: 0.5s;
+}
+.content6 div:hover .div11{
+    color:white;
+    border: 2px solid white;
+    transition: 1s;
+}
+.content6 div:hover .p1{
+    color: white;
+    transition: 1.2s;
+}
+.content6 div:hover .p2{
+    color: white;
+    transition: 1.4s;
+}
+.content6 div:hover .p3{
+    color: white;
+    transition: 1.6s;
+}
+.content6 div:hover button{
+    color: white;
+    transition: 2s;
+}
+.container7{
+    width: 100%;
+    height: 50vh;
+    background: url(../images/istockphoto-1429456277-612x612.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 0;
+    color: white;
+}
+.container7::after{
+    position: absolute;
+    z-index: 1;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #00000073;
+}
+.container7 .content7{
+    overflow: auto;
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+}
+.content7>div{
+    width: 45%;
+    position: relative;
+    z-index: 2;
+}
+.content7 .left-content{
+    float: left;
+}
+.content7 .right-content{
+    float: right;
+}
+.content7 .top{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    overflow: auto;
+}
+.content7 .left-top img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: absolute;
+}
+.content7 .left-top{
+    float: left;
+}
+.content7 .right-top{
+    float: right;
+    position: absolute;  
+    margin-left: 20%;
+}
+.container8{
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color:rgb(225, 208, 185);
+    position: relative;
+}
+.ad2{
+    font-size: 40px;
+    padding-top: 3%;
+    text-align: center;
+}
+.divline2{
+    height: 4px;
+    width: 150px;
+    background-color: rgb(0, 0, 0);
+    margin:auto ;
+    margin-top:20px;
+}
+.content8{
+    width: 90%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    overflow: auto;
+    margin-top: 4%;
+    position:relative;
+}
+.content8 .item{
+    width:30%;
+    border:none;
+    background-color: rgb(172, 147, 109);
+    float: left;
+    text-align: center;
+    position:relative;
+}
+.content8 .item1{
+    margin-left: 5%;
+}
+.content8 .img{
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+.content8 .img img{
+    height: 60%;
+}
+.content8 .overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+    opacity: 0;
+}
+.content8 .item:hover .overlay{
+    visibility: visible;
+    opacity: 1;
+}
+.content8 .overlay a{
+    width: 45px;
+    height: 45px;
+    background:rgb(231, 222, 209);
+    color:rgb(112, 79, 30);
+    display: block;
+    margin-left: auto;
+}
+.content8 .overlay a i{
+    line-height: 45px;
+}
+.content8 .inf h2{
+    padding: 5px 0px;
+    font-size: 40px;
+}
+.content8 .inf p{
+    font-size: 25px;
+}
+.content8 .item:after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0;
+}
+.content8 .item:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    transition: 2s;
+}
+.content8 div:hover h2{
+    color: white;
+    transition: 1.8s;
+}
+.content8 div:hover p{
+    color: white;
+    transition: 2s;
+}
+.container9{
+    width: 100%;
+    height: 1000px;
+    top: 0;
+    left: 0;
+    background-color:rgb(216, 200, 176);
+    position: relative;
+}
+.content9{
+    width: 90%;
+    height: 850px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    overflow: auto;
+    margin-top: 4%;
+    position:relative;
+}
+.content9 .item{
+    width:21%;
+    border:none;
+    background-color: rgb(172, 147, 109);
+    float: left;
+    position:relative;
+}
+.content9 .item2{
+    margin-left: 5%;
+}
+.content9 .item3{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.content9 .inf span,h2,.p1{
+    margin-left: 20px;
+}
+.content9 .inf i{
+    color:rgb(112, 79, 30);
+}
+.content9 .inf span{
+    font-size: 20px;
+}
+.content9 .inf h2{
+    font-size: 40px;
+}
+.content9 .inf p{
+    font-size: 25px;
+    margin-top: 20px;
+}
+.content9 .inf .p2{
+    text-align: center;
+}
+.content9 .item::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 100%;
+    bottom: 100%;
+    background-color:#00000073;;
+    opacity: .7;
+    transition: 1s;
+}
+.content9 .item:hover{
+    color: white;
+    transition: 2s;
+}
+.content9 .item:hover::after{
+    right: 0%;
+    bottom: 0%;
+    transition: 2s;
+}
+.content9 .divb button{
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 45px;
+    border-radius:5px;
+    border:none;
+    font-size: 20px;
+    margin-top: 40px;
+}
+.container10{
+    width: 100%;
+    height: 50vh;
+    background: url(../images/photo-1534452203293-494d7ddbf7e0.jpeg);
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+    color: white;
+}
+.container10::after{
+    position: absolute;
+    z-index: 1;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #00000073;
+}
+.container10 .content10{
+    overflow: auto;
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+}
+.content10 div{
+    float: left;
+    width:21%;
+    border:none;
+}
+.content10 .div2{
+    margin-left: 5%;
+}
+.content10 .div3{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.content10 div li{
+    list-style:none ;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.content10 div p{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.content10 i{
+    padding: 7px;
+    background:rgb(231, 222, 209);
+    color:rgb(112, 79, 30);
+    border-radius: 50%;
+    margin-left: 20px;
+    margin-top: 20px;
+}
